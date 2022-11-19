@@ -1,5 +1,6 @@
 {
-  "name": "productapp", 
+  "name": "productapp",
+  "homepage": "https://Lawlesh2022.github.io/productapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "redux": "^4.2.0",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {    
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
